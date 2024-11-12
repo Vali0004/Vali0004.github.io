@@ -8,7 +8,7 @@ RAM              0x00000000200134e8 0x000000000000c318
 
 Linker script and memory map
 
-LOAD C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+LOAD C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
                 0x000000000134d9a3                target_fw = 0x134d9a3
                 0x000000000002ae20                custom_flash_base = 0x2ae20
                 0x00000000200134e8                custom_ram_base = 0x200134e8
@@ -42,27 +42,26 @@ LOAD C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
 .text           0x000000000002ae20      0xe08
                 0x000000000002ae20                . = ALIGN (0x4)
  *(.text)
- .text          0x000000000002ae20      0xc22 C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+ .text          0x000000000002ae20      0xc24 C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
                 0x000000000002b3ce                handle_reset_custom
                 0x000000000002b41c                get_analog_key
                 0x000000000002b47a                custom_widget_handler
-                0x000000000002b92e                ms_callback_custom
-                0x000000000002b9ca                screen_layer_update_custom
-                0x000000000002b9de                screen_layer_update_menu_custom
-                0x000000000002b9f8                menu_device_info_custom
+                0x000000000002b930                ms_callback_custom
+                0x000000000002b9cc                screen_layer_update_custom
+                0x000000000002b9e0                screen_layer_update_menu_custom
+                0x000000000002b9fa                menu_device_info_custom
  *(.text.*)
  *(.rodata)
- *fill*         0x000000000002ba42        0x2 
- .rodata        0x000000000002ba44      0x11a C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+ .rodata        0x000000000002ba44      0x11a C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
  *(.rodata*)
  *fill*         0x000000000002bb5e        0x2 
  .rodata.str4.4
-                0x000000000002bb60       0xc8 C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+                0x000000000002bb60       0xc8 C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
  *(.gnu.linkonce.t.*)
                 0x000000000002bc28                . = ALIGN (0x4)
 
 .rela.dyn       0x000000000002bc28        0x0
- .rela.text     0x000000000002bc28        0x0 C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+ .rela.text     0x000000000002bc28        0x0 C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
 
 .dalign         0x00000000200134e8        0x0 load address 0x000000000002bc28
                 0x00000000200134e8                . = ALIGN (0x4)
@@ -75,7 +74,7 @@ LOAD C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
 .data           0x00000000200134e8       0x18 load address 0x000000000002bc28
  *(.gnu.linkonce.r.*)
  *(.data .data.*)
- .data          0x00000000200134e8        0xb C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+ .data          0x00000000200134e8        0xb C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
  *(.gnu.linkonce.d.*)
                 0x00000000200134f8                . = ALIGN (0x8)
  *fill*         0x00000000200134f3        0x5 
@@ -87,7 +86,7 @@ LOAD C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
  *(.srodata.cst16)
  *(.srodata.cst8)
  *(.srodata.cst4)
- .srodata.cst4  0x00000000200134f8        0x8 C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+ .srodata.cst4  0x00000000200134f8        0x8 C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
  *(.srodata.cst2)
  *(.srodata .srodata.*)
                 0x0000000020013500                . = ALIGN (0x4)
@@ -97,11 +96,11 @@ LOAD C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
                 0x0000000020013500                . = ALIGN (0x4)
                 0x0000000020013500                PROVIDE (_sbss = .)
  *(.sbss*)
- .sbss          0x0000000020013500        0x6 C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+ .sbss          0x0000000020013500        0x6 C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
  *(.gnu.linkonce.sb.*)
  *(.bss*)
  *fill*         0x0000000020013506        0x2 
- .bss           0x0000000020013508      0x3f4 C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+ .bss           0x0000000020013508      0x3f4 C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
  *(.gnu.linkonce.b.*)
  *(COMMON*)
                 0x00000000200138fc                . = ALIGN (0x4)
@@ -115,36 +114,36 @@ LOAD c:/program files/sysgcc/bin/../lib/gcc/riscv64-unknown-elf/10.1.0\libgcc.a
 OUTPUT(bin/main.o elf32-littleriscv)
 
 .debug_info     0x0000000000000000      0xf1b
- .debug_info    0x0000000000000000      0xf1b C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+ .debug_info    0x0000000000000000      0xf1b C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
 
 .debug_abbrev   0x0000000000000000      0x349
- .debug_abbrev  0x0000000000000000      0x349 C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+ .debug_abbrev  0x0000000000000000      0x349 C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
 
 .debug_loc      0x0000000000000000     0x1502
- .debug_loc     0x0000000000000000     0x1502 C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+ .debug_loc     0x0000000000000000     0x1502 C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
 
 .debug_aranges  0x0000000000000000       0x20
  .debug_aranges
-                0x0000000000000000       0x20 C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+                0x0000000000000000       0x20 C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
 
-.debug_ranges   0x0000000000000000      0x418
- .debug_ranges  0x0000000000000000      0x418 C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+.debug_ranges   0x0000000000000000      0x420
+ .debug_ranges  0x0000000000000000      0x420 C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
 
-.debug_line     0x0000000000000000     0x1951
- .debug_line    0x0000000000000000     0x1951 C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+.debug_line     0x0000000000000000     0x1961
+ .debug_line    0x0000000000000000     0x1961 C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
 
 .debug_str      0x0000000000000000      0x405
- .debug_str     0x0000000000000000      0x405 C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+ .debug_str     0x0000000000000000      0x405 C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
                                         0x45a (size before relaxing)
 
 .comment        0x0000000000000000       0x12
- .comment       0x0000000000000000       0x12 C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+ .comment       0x0000000000000000       0x12 C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
                                          0x13 (size before relaxing)
 
 .riscv.attributes
                 0x0000000000000000       0x36
  .riscv.attributes
-                0x0000000000000000       0x36 C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+                0x0000000000000000       0x36 C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
 
 .debug_frame    0x0000000000000000      0x144
- .debug_frame   0x0000000000000000      0x144 C:\Users\Vali\AppData\Local\Temp\ccDYOswj.o
+ .debug_frame   0x0000000000000000      0x144 C:\Users\Vali\AppData\Local\Temp\ccofQQmi.o
